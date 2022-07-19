@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "ESNext",
+    "lib": ["ESNext"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "declaration": true,
+    "outDir": "./lib",
+    "rootDir": "./",
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "index.ts"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    ".eslintrc.js",
+    ".prettierrc.js"
+  ]
+}
