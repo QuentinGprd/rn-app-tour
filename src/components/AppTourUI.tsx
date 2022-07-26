@@ -28,7 +28,7 @@ export const AppTourUI = ({ isVisible, options }: AppTourUIProps) => {
   });
 
   const fadeAnim = useRef(new Animated.Value(0)).current;
-  const [animIsFinished, setAnimIsFinished] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
 
   const measureRef = useCallback(
     () =>
@@ -85,22 +85,22 @@ export const AppTourUI = ({ isVisible, options }: AppTourUIProps) => {
   }, [ref, measureRef]);
 
   useEffect(() => {
-    setAnimIsFinished(false);
-
-    if (measure) {
-      Animated.timing(fadeAnim, {
-        toValue: isVisible ? 1 : 0,
-        duration: 300,
-        useNativeDriver: true,
-      }).start(({ finished }) => {
-        if (!isVisible) {
-          setAnimIsFinished(finished);
-        }
-      });
+    if (isVisible) {
+      setShouldRender(true);
     }
-  }, [fadeAnim, isVisible, measure]);
 
-  if (animIsFinished || !measure) {
+    Animated.timing(fadeAnim, {
+      toValue: isVisible ? 1 : 0,
+      duration: 300,
+      useNativeDriver: true,
+    }).start(({ finished }) => {
+      if (finished && !isVisible) {
+        setShouldRender(false);
+      }
+    });
+  }, [fadeAnim, isVisible]);
+
+  if (!shouldRender) {
     return <></>;
   }
 
