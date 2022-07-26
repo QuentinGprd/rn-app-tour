@@ -18,7 +18,7 @@
     "react-native-safe-area-context": "^4.3.1",
     "react-native-screens": "^3.15.0",
     "react-native-svg": "^12.3.0",
-    "rn-app-tour": "file:../../../../rn-app-tour-1.0.0.tgz"
+    "rn-app-tour": "file:rn-app-tour-1.0.0.tgz"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

@@ -1,0 +1,354 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test AppTourUI component renders correctly when hidden 1`] = `
+<View>
+  <View>
+    <Text>
+      Hello world!
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`test AppTourUI component renders correctly with modal at bottom 1`] = `
+<View>
+  <View>
+    <Text>
+      Hello world!
+    </Text>
+  </View>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight="100%"
+    bbWidth="100%"
+    focusable={false}
+    height="100%"
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        Object {
+          "flex": 0,
+          "height": "100%",
+          "width": "100%",
+        },
+      ]
+    }
+    vbHeight={1334}
+    vbWidth={750}
+    width="100%"
+  >
+    <RNSVGGroup>
+      <RNSVGDefs>
+        <RNSVGMask
+          height="100%"
+          maskContentUnits={1}
+          maskTransform={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          maskUnits={1}
+          name="mask"
+          width="100%"
+          x={0}
+          y={0}
+        >
+          <RNSVGRect
+            fill={4294967295}
+            height="100%"
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            width="100%"
+            x={0}
+            y={0}
+          />
+          <RNSVGRect
+            fill={4278190080}
+            height={100}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rx={50}
+            width={100}
+            x={1000}
+            y={1000}
+          />
+        </RNSVGMask>
+        <RNSVGRect
+          fill={2147483648}
+          height="100%"
+          name="bg"
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          width="100%"
+          x={0}
+          y={0}
+        />
+      </RNSVGDefs>
+      <RNSVGUse
+        fill={null}
+        height={0}
+        href="bg"
+        mask="mask"
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        width={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <View
+    style={
+      Object {
+        "bottom": 344,
+        "left": 10,
+        "position": "absolute",
+        "right": 10,
+        "top": "auto",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "white",
+              "borderRadius": 10,
+              "flex": 1,
+              "marginTop": -0.5,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <View>
+            <Text>
+              App Tour Modal
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "borderBottomColor": "white",
+            "borderBottomWidth": 10,
+            "borderLeftColor": "transparent",
+            "borderLeftWidth": 10,
+            "borderRightColor": "transparent",
+            "borderRightWidth": 10,
+            "height": 0,
+            "left": 675,
+            "transform": Array [
+              Object {
+                "rotate": "180deg",
+              },
+            ],
+            "width": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`test AppTourUI component renders correctly with modal on top 1`] = `
+<View>
+  <View>
+    <Text>
+      Hello world!
+    </Text>
+  </View>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight="100%"
+    bbWidth="100%"
+    focusable={false}
+    height="100%"
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        Object {
+          "flex": 0,
+          "height": "100%",
+          "width": "100%",
+        },
+      ]
+    }
+    vbHeight={1334}
+    vbWidth={750}
+    width="100%"
+  >
+    <RNSVGGroup>
+      <RNSVGDefs>
+        <RNSVGMask
+          height="100%"
+          maskContentUnits={1}
+          maskTransform={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          maskUnits={1}
+          name="mask"
+          width="100%"
+          x={0}
+          y={0}
+        >
+          <RNSVGRect
+            fill={4294967295}
+            height="100%"
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            width="100%"
+            x={0}
+            y={0}
+          />
+          <RNSVGRect
+            fill={4278190080}
+            height={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rx={0}
+            width={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGMask>
+        <RNSVGRect
+          fill={2147483648}
+          height="100%"
+          name="bg"
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          width="100%"
+          x={0}
+          y={0}
+        />
+      </RNSVGDefs>
+      <RNSVGUse
+        fill={null}
+        height={0}
+        href="bg"
+        mask="mask"
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        width={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <View
+    style={
+      Object {
+        "bottom": "auto",
+        "left": 10,
+        "position": "absolute",
+        "right": 10,
+        "top": 10,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "borderBottomColor": "white",
+            "borderBottomWidth": 10,
+            "borderLeftColor": "transparent",
+            "borderLeftWidth": 10,
+            "borderRightColor": "transparent",
+            "borderRightWidth": 10,
+            "height": 0,
+            "left": -375,
+            "width": 0,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "white",
+              "borderRadius": 10,
+              "flex": 1,
+              "marginTop": -0.5,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <View>
+            <Text>
+              App Tour Modal
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

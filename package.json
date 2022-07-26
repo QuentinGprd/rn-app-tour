@@ -7,18 +7,22 @@
   "files": [
     "/lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinGprd/rn-app-tour.git"
+  },
   "keywords": [
     "react-native",
     "app-tour"
   ],
   "scripts": {
     "publish:local": "./scripts/publish-local.sh",
-    "example:android": "cd ./Example && npm install && npm run android && cd ../",
-    "example:ios": "cd ./Example && npm install && npx pod-install && npm run ios && cd ../",
+    "example:android": "cd ./Example && yarn && yarn android && cd ../",
+    "example:ios": "cd ./Example && yarn && npx pod-install && yarn ios && cd ../",
     "build": "rm -rf ./lib && tsc",
     "prettier": "./node_modules/.bin/prettier --write",
     "lint": "./node_modules/.bin/eslint --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/jest",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -31,6 +35,11 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@testing-library/jest-native": "^4.0.5",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/react-native": "^10.1.1",
+    "@types/jest": "^28.1.6",
     "@types/react-native": "^0.69.2",
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
@@ -39,12 +48,18 @@
     "husky": "^8.0.0",
     "jest": "^28.1.3",
     "lint-staged": "^13.0.3",
+    "metro-react-native-babel-preset": "^0.71.3",
+    "mockdate": "^3.0.5",
     "prettier": "^2.7.1",
+    "react": "^18.0.2",
+    "react-native": "^0.69.2",
+    "react-native-svg": "^12.4.0",
+    "react-test-renderer": "^18.2.0",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-native": "^0.69.1",
-    "react-native-svg": "^12.3.0"
+    "react": "^18.0.2",
+    "react-native": "^0.69.2",
+    "react-native-svg": "^12.4.0"
   }
 }
