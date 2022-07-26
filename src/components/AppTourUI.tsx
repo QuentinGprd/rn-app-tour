@@ -41,10 +41,6 @@ export const AppTourUI = ({ isVisible, options }: AppTourUIProps) => {
   );
 
   const modalTopPosition = useMemo(() => {
-    if (!measure) {
-      return 0;
-    }
-
     if (measure.y < Dimensions.get('screen').height / 2) {
       // place modal under mask
       return measure.y + measure.height + 10;
@@ -54,10 +50,6 @@ export const AppTourUI = ({ isVisible, options }: AppTourUIProps) => {
   }, [measure]);
 
   const modalBottomPosition = useMemo(() => {
-    if (!measure) {
-      return 0;
-    }
-
     if (measure.y >= Dimensions.get('screen').height / 2) {
       // place modal over the mask
       return Dimensions.get('screen').height - measure.y + 10;
@@ -69,13 +61,7 @@ export const AppTourUI = ({ isVisible, options }: AppTourUIProps) => {
   const arrowOrientation = modalTopPosition !== 'auto' ? 'top' : 'bottom';
 
   const arrowLeftOffset = useMemo(() => {
-    if (measure) {
-      return (
-        -Dimensions.get('screen').width / 2 + measure.x + measure.width / 2
-      );
-    }
-
-    return 0;
+    return -Dimensions.get('screen').width / 2 + measure.x + measure.width / 2;
   }, [measure]);
 
   const arrowStyle = useMemo(() => {
