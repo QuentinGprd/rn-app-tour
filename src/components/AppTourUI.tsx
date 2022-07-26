@@ -120,7 +120,6 @@ export const AppTourUI = ({ isVisible, options }: AppTourUIProps) => {
 
   return (
     <Animated.View
-      ref={ref}
       style={{
         opacity: fadeAnim,
         position: 'absolute',
