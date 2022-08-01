@@ -16,14 +16,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm'
+          cache: 'yarn'
 
       - name: Setup React Native environment
         run: |
-          npm install react
-          npm install react-native
+          yarn
       - name: Run tests
-        run: npm run test --coverage
+        run: yarn test --coverage
 
   publish:
     runs-on: ubuntu-latest
@@ -37,10 +36,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: yarn
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - id: publish
         uses: JS-DevTools/npm-publish@v1
