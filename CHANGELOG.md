@@ -8,3 +8,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 Headers are one of:
 
 - `Added`, `Changed`, `Removed`, `Fixed` or `Breaking`.
+
+## [1.0.1] - 2026-04-23
+
+### Chore
+
+- Bump dependencies
