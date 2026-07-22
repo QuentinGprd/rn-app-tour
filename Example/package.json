@@ -21,7 +21,7 @@
     "rn-app-tour": "file:rn-app-tour-1.0.1.tgz"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/core": "^7.29.6",
     "@babel/runtime": "^7.26.10",
     "@react-native-community/eslint-config": "^2.0.0",
     "@tsconfig/react-native": "^2.0.0",
